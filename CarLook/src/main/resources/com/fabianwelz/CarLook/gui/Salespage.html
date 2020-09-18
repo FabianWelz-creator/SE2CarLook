@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout size-full>
+   <vaadin-horizontal-layout width-full>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e810" style-name="logoutbutton" plain-text _id="logoutbutton">
+      Abmelden 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width="699px" height="12.85%" :expand>
+    <vaadin-button style-name="addnewcarbutton" plain-text _id="addnewcarbutton">
+      Neues Auto eintragen 
+    </vaadin-button>
+    <vaadin-button style-name="showcarsbutton" plain-text _id="showcarsbutton">
+      Meine Autos 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout style-name="salehorizontal" width="676px" _id="salehorizontal">
+    <vaadin-form-layout style-name="createcarform" width="267px" height="279px" _id="createcarform">
+     <vaadin-text-field caption="Marke" style-name="brandtextfield" _id="brandtextfield"></vaadin-text-field>
+     <vaadin-text-field caption="Baujahr" style-name="yeartextfield" _id="yeartextfield"></vaadin-text-field>
+     <vaadin-text-field caption="Infotext" style-name="infotextfield" height="93px" _id="infotextfield"></vaadin-text-field>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e7c4" style-name="createcar" plain-text _id="createcar">
+       Auto eintragen 
+     </vaadin-button>
+    </vaadin-form-layout>
+    <vaadin-vertical-layout style-name="gridlayout" width="345px" height="277px" _id="gridlayout"></vaadin-vertical-layout>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
