@@ -17,7 +17,7 @@ public class Registerpageview extends Registerpage implements View{
 	public Registerpageview () {
 		// Lese Daten aus den Feldern aus 
 		Binder<SellerDTO> binder = new Binder<>(SellerDTO.class);
-		binder.forField(registeremailtextfield).withValidator(new EmailValidator("Das ist keine gültige E-Mail Adresse"))
+		binder.forField(registeremailtextfield).asRequired("Email eintragen!").withValidator(new EmailValidator("Das ist keine gültige E-Mail Adresse"))
         .bind(SellerDTO::getEmail, SellerDTO::setEmail);
 		binder.forField(registernametextfield).asRequired("Namen eintragen!").bind(SellerDTO::getName, SellerDTO::setName);
 		binder.forField(registerpasswordtextfield).asRequired("Passwort eintragen!").bind(SellerDTO::getPassword, SellerDTO::setPassword);

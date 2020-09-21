@@ -39,7 +39,7 @@ class junitseleniumlogintest {
 	    Thread.sleep(100);
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("loginbutton")));
 	    driver.findElement(By.className("loginbutton")).click();
-	    Thread.sleep(100);
+	    Thread.sleep(1000);
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("logoutbutton")));
 	    driver.findElement(By.className("logoutbutton")).click();
 	    try {

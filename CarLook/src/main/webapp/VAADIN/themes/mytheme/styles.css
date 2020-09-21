@@ -15419,3 +15419,10 @@ div.v-layout.v-horizontal.v-widget {
 	width: 19px;
 	overflow: hidden;
 }
+
+.mytheme .loginpageform {
+	margin: auto;
+	width: 17%;
+	display: block !important;
+	padding: 10px;
+}

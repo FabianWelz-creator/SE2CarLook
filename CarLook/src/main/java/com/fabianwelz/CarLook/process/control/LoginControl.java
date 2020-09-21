@@ -30,7 +30,7 @@ public static void checkAuthentication(LoginDTO login) throws LoginException, Da
         else {
             
             SessionControl.getInstance().setCurrentUser(user); 
-            System.out.println(user.getEmail() + "ist erfolgreich eingeloggt");
+            System.out.println(user.getEmail() + " ist erfolgreich eingeloggt");
         }
         
         // Navigate to main view;      

@@ -32,7 +32,6 @@ private static CarDAO me;
         try {
             PreparedStatement s = JDBCConnectionHandler.getInstance().getPreparedStatement("INSERT INTO carlookdb.auto "
                                                                                          + "VALUES (?,?,?,?)");
-            System.out.println(obj.getBrand()+obj.getYear()+obj.getInfo()+obj.getEmail());
             s.setString(1, obj.getBrand());
             s.setString(2, obj.getYear());
             s.setString(3, obj.getInfo());
